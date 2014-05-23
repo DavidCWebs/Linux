@@ -69,6 +69,11 @@ This is probably better than scp - since it only transfers the differences betwe
 ```
 rsync -az /path/to/source username@host:/path/to/destination
 ```
+May need to specify SSH:
+
+```
+rsync -az -e ssh /path/to/source username@host:/path/to/destination
+```
 Common options used with rsync commands:
 * -v : verbose
 * -r : copies data recursively (but don’t preserve timestamps and permission while transferring data
