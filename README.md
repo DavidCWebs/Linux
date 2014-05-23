@@ -70,8 +70,8 @@ This is probably better than scp - since it only transfers the differences betwe
 rsync -az /path/to/source username@host:/path/to/destination
 ```
 Common options used with rsync commands:
-*-v : verbose
-*-r : copies data recursively (but don’t preserve timestamps and permission while transferring data
-*-a : archive mode, archive mode allows copying files recursively and it also preserves symbolic links, file permissions, user & group ownerships and timestamps
-*-z : compress file data
-*-h : human-readable, output numbers in a human-readable format
+* -v : verbose
+* -r : copies data recursively (but don’t preserve timestamps and permission while transferring data
+* -a : archive mode, archive mode allows copying files recursively and it also preserves symbolic links, file permissions, user & group ownerships and timestamps
+* -z : compress file data
+* -h : human-readable, output numbers in a human-readable format
