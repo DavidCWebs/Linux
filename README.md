@@ -12,6 +12,7 @@ Copy an entire directory and it's contents (sub directories & files):
 	sudo cp -r /path/to/source /path/to/destination
 
 ###Users & Groups###
+
 Add User to Sudoers:
   sudo adduser <username> sudo
 
