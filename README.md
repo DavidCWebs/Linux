@@ -79,6 +79,6 @@ HTML version of rsync man page: http://rsync.samba.org/ftp/rsync/rsync.html
 Common options used with rsync commands:
 * -v : verbose
 * -r : copies data recursively (but don’t preserve timestamps and permission while transferring data
-* -a : archive mode - allows copying files recursively, preserves symbolic links, file permissions, user & group ownerships and timestamps
+* -a : archive mode - preserves almost everything - copies files recursively, preserves symbolic links, file permissions, user & group ownerships and timestamps
 * -z : compress file data
 * -h : human-readable, output numbers in a human-readable format
