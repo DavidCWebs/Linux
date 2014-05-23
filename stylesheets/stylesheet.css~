@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -23,6 +23,7 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
+  color: #fff;
 }
 
 li {
