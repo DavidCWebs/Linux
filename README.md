@@ -2,8 +2,7 @@ Linux command line cheat sheet
 ==============================
 
 Basic Linux/terminal commands repository.
-
-#Basic Commands#
+-------------------------------------------
 
 ###General Commands###
 Change Directory `cd /path/to/dir` Move up one Dir	`cd..` Move to Root `cd /`	Move to Users Home `cd ~`
