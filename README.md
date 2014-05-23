@@ -75,6 +75,7 @@ May need to specify SSH:
 rsync -az -e ssh /path/to/source username@host:/path/to/destination
 ```
 HTML version of rsync man page: http://rsync.samba.org/ftp/rsync/rsync.html
+
 Common options used with rsync commands:
 * -v : verbose
 * -r : copies data recursively (but don’t preserve timestamps and permission while transferring data
