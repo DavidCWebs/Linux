@@ -1,7 +1,11 @@
 Linux command line cheat sheet
 ==============================
 
-@@TOC@@
+- [General Commands###](#general-commands)
+- [Users & Groups###](#users--groups)
+- [Manage Directories###](#manage-directories)
+- [WordPress: Set Directory & File Permissions###](#wordpress-set-directory--file-permissions)
+- [Sync to Remote Server###](#sync-to-remote-server)
 
 ###General Commands###
 Change Directory `cd /path/to/dir` Move up one Dir	`cd..` Move to Root `cd /`	Move to Users Home `cd ~`
@@ -86,4 +90,3 @@ Common options used with rsync commands:
 * -h : human-readable, output numbers in a human-readable format
 
 Good description of rsync flags: http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/
-
