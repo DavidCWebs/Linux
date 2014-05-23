@@ -66,8 +66,3 @@ Set File Permissions to 644:
 ```
 find /var/www/path-to-wp -type f -exec chmod 644 {} \;
 ```
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
