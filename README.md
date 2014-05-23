@@ -1,8 +1,7 @@
-Linux
+Linux command line cheat sheet
 =====
 
-Linux command line cheat sheets
-
+Basic Linux/terminal commands repository.
 #Basic Commands#
 
 ###General Commands###
@@ -65,4 +64,11 @@ Set File Permissions to 644:
 
 ```
 find /var/www/path-to-wp -type f -exec chmod 644 {} \;
+```
+
+###Sync to Remote Server###
+This is probably better than scp - since it only transfers the differences between two sets of files. 
+
+```
+rsync -az /path/to/source username@host:/path/to/destination
 ```
