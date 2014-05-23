@@ -44,7 +44,7 @@
 <h3>
 <a name="general-commands" class="anchor" href="#general-commands"><span class="octicon octicon-link"></span></a>General Commands</h3>
 
-<p>Change Directory <code>cd /path/to/dir</code> Move up one Dir  <code>cd..</code> Move to Root <code>cd /</code>  Move to Users Home <code>cd ~</code></p>
+<p>Change Directory:<code class="inline">cd /path/to/dir</code> Move up one Directory:<code class="inline">cd..</code> Move to Root:<code class="inline">cd /</code>  Move to Users Home:<code class="inline">cd ~</code></p>
 
 <p>Copy an entire directory and it's contents, including sub directories &amp; files:</p>
 
