@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Linux by DavidCWebs</title>
+    <title>Linux Cheatsheet by DavidCWebs</title>
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <h1>David's Handy Linux Commands Cheat Sheet</h1>
+        <h1>David's Handy Linux Cheat Sheet</h1>
         <section id="downloads">
           <a href="https://github.com/DavidCWebs/Linux/zipball/master" class="btn">Download as .zip</a>
           <a href="https://github.com/DavidCWebs/Linux/tarball/master" class="btn">Download as .tar.gz</a>
@@ -36,6 +36,9 @@
 <li><a href="#wordpress-set-directory--file-permissions">WordPress: Set Directory &amp; File Permissions</a></li>
 <li><a href="#sync-to-remote-server">Sync to Remote Server</a></li>
 </ul>
+This cheatsheet contains commands for Ubuntu, but they should work for any debian based Linux flavour. Maintained by @DavidCWebs - get in touch with me: david@carawebs.com.
+This should really be in wiki format, but I'm playing with GitHub pages!
+
 <hr>
 <h3>
 <a name="general-commands" class="anchor" href="#general-commands"><span class="octicon octicon-link"></span></a>General Commands</h3>
@@ -46,7 +49,7 @@
 
 <pre><code>sudo cp -r /path/to/source /path/to/destination
 </code></pre>
-
+<hr>
 <h3>
 <a name="users--groups" class="anchor" href="#users--groups"><span class="octicon octicon-link"></span></a>Users &amp; Groups</h3>
 
@@ -65,7 +68,7 @@ sudo passwd testuser
 
 <pre><code>rename 's/\.foo$/\.bar/' * SPECIFIC EXAMPLE: rename 's/\.gddoc$/\.txt/' *
 </code></pre>
-
+<hr>
 <h3>
 <a name="manage-directories" class="anchor" href="#manage-directories"><span class="octicon octicon-link"></span></a>Manage Directories</h3>
 
@@ -83,7 +86,7 @@ sudo passwd testuser
 
 <pre><code>ls &gt; print.txt
 </code></pre>
-
+<hr>
 <h3>
 <a name="wordpress-set-directory--file-permissions" class="anchor" href="#wordpress-set-directory--file-permissions"><span class="octicon octicon-link"></span></a>WordPress: Set Directory &amp; File Permissions</h3>
 
@@ -96,7 +99,7 @@ sudo passwd testuser
 
 <pre><code>find /var/www/path-to-wp -type f -exec chmod 644 {} \;
 </code></pre>
-
+<hr>
 <h3>
 <a name="sync-to-remote-server" class="anchor" href="#sync-to-remote-server"><span class="octicon octicon-link"></span></a>Sync to Remote Server</h3>
 
