@@ -82,3 +82,6 @@ Common options used with rsync commands:
 * -a : archive mode - preserves almost everything - copies files recursively, preserves symbolic links, file permissions, user & group ownerships and timestamps
 * -z : compress file data
 * -h : human-readable, output numbers in a human-readable format
+
+Good description of rsync flags: http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/
+
