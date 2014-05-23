@@ -1,7 +1,8 @@
 Linux command line cheat sheet
-=====
+==============================
 
 Basic Linux/terminal commands repository.
+
 #Basic Commands#
 
 ###General Commands###
