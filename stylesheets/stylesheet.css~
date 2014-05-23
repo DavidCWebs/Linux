@@ -164,6 +164,18 @@ pre {
   overflow-y: hidden;
 }
 
+code {
+	background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 14px;
+  color: #b5e853;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-wrap: normal;
+}
+
 table {
   width: 100%;
   margin: 0 0 20px 0;
