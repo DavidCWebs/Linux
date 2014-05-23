@@ -55,7 +55,6 @@ ls > print.txt
 
 ###WordPress: Set Directory & File Permissions###
 
-####Test####
 Set Directory Permissions to 755:
 
 ```
