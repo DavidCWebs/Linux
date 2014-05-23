@@ -9,7 +9,10 @@ Linux command line cheat sheets
 Change Directory `cd /path/to/dir` Move up one Dir	`cd..` Move to Root `cd /`	Move to Users Home `cd ~`
 
 Copy an entire directory and it's contents, including sub directories & files:
-	sudo cp -r /path/to/source /path/to/destination
+
+```
+sudo cp -r /path/to/source /path/to/destination
+```
 
 ###Users & Groups###
 
