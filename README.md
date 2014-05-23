@@ -34,6 +34,7 @@ Print Directory Contents. Once in the directory you want to print the contents o
 
 ###WordPress: Set Directory & File Permissions###
 
+####Test####
 Set Directory Permissions to 755:
   find /var/www/domain.com/path-to-wp -type d -exec chmod 755 {} \;
 
