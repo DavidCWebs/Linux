@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Linux by DavidCWebs</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Linux</h1>
+        <h2>Linux command line cheat sheets</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/DavidCWebs/Linux/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/DavidCWebs/Linux/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/DavidCWebs/Linux" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="linux-command-line-cheat-sheet" class="anchor" href="#linux-command-line-cheat-sheet"><span class="octicon octicon-link"></span></a>Linux command line cheat sheet</h1>
+
+<ul>
+<li><a href="#general-commands">General Commands</a></li>
+<li><a href="#users--groups">Users &amp; Groups</a></li>
+<li><a href="#manage-directories">Manage Directories</a></li>
+<li><a href="#wordpress-set-directory--file-permissions">WordPress: Set Directory &amp; File Permissions</a></li>
+<li><a href="#sync-to-remote-server">Sync to Remote Server</a></li>
+</ul><h3>
+<a name="general-commands" class="anchor" href="#general-commands"><span class="octicon octicon-link"></span></a>General Commands</h3>
+
+<p>Change Directory <code>cd /path/to/dir</code> Move up one Dir  <code>cd..</code> Move to Root <code>cd /</code>  Move to Users Home <code>cd ~</code></p>
+
+<p>Copy an entire directory and it's contents, including sub directories &amp; files:</p>
+
+<pre><code>sudo cp -r /path/to/source /path/to/destination
+</code></pre>
+
+<h3>
+<a name="users--groups" class="anchor" href="#users--groups"><span class="octicon octicon-link"></span></a>Users &amp; Groups</h3>
+
+<p>Add User to Sudoers:</p>
+
+<pre><code>sudo adduser &lt;username&gt; sudo
+</code></pre>
+
+<p>Create user with password and home folder:</p>
+
+<pre><code>sudo useradd -d /home/testuser -m testuser
+sudo passwd testuser
+</code></pre>
+
+<p>Rename file extensions:</p>
+
+<pre><code>rename 's/\.foo$/\.bar/' * SPECIFIC EXAMPLE: rename 's/\.gddoc$/\.txt/' *
+</code></pre>
+
+<h3>
+<a name="manage-directories" class="anchor" href="#manage-directories"><span class="octicon octicon-link"></span></a>Manage Directories</h3>
+
+<p>Delete the files and directories, but requires a prompt for each of the files</p>
+
+<pre><code>rm -r directory
+</code></pre>
+
+<p>Delete all with no prompt:</p>
+
+<pre><code>rm -rf example
+</code></pre>
+
+<p>Print Directory Contents. Once in the directory you want to print the contents of:</p>
+
+<pre><code>ls &gt; print.txt
+</code></pre>
+
+<h3>
+<a name="wordpress-set-directory--file-permissions" class="anchor" href="#wordpress-set-directory--file-permissions"><span class="octicon octicon-link"></span></a>WordPress: Set Directory &amp; File Permissions</h3>
+
+<p>Set Directory Permissions to 755:</p>
+
+<pre><code>find /var/www/domain.com/path-to-wp -type d -exec chmod 755 {} \;
+</code></pre>
+
+<p>Set File Permissions to 644:</p>
+
+<pre><code>find /var/www/path-to-wp -type f -exec chmod 644 {} \;
+</code></pre>
+
+<h3>
+<a name="sync-to-remote-server" class="anchor" href="#sync-to-remote-server"><span class="octicon octicon-link"></span></a>Sync to Remote Server</h3>
+
+<p>This is probably better than scp - since it only transfers the differences between two sets of files. Assumes that SSH has been set up between local and remote.</p>
+
+<pre><code>rsync -az /path/to/source username@host:/path/to/destination
+</code></pre>
+
+<p>May need to specify SSH:</p>
+
+<pre><code>rsync -az -e ssh /path/to/source username@host:/path/to/destination
+</code></pre>
+
+<p>HTML version of rsync man page: <a href="http://rsync.samba.org/ftp/rsync/rsync.html">http://rsync.samba.org/ftp/rsync/rsync.html</a></p>
+
+<p>Common options used with rsync commands:</p>
+
+<ul>
+<li>-v : verbose</li>
+<li>-r : copies data recursively (but don’t preserve timestamps and permission while transferring data</li>
+<li>-a : archive mode - preserves almost everything - copies files recursively, preserves symbolic links, file permissions, user &amp; group ownerships and timestamps</li>
+<li>-z : compress file data</li>
+<li>-h : human-readable, output numbers in a human-readable format</li>
+</ul><p>Good description of rsync flags: <a href="http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/">http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/</a></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
