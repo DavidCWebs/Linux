@@ -15,8 +15,8 @@
 
     <header>
       <div class="container">
-        <h1>Linux</h1>
-        <h2>Linux command line cheat sheets</h2>
+        <h1>Linux Commands</h1>
+        <h2>My handy Linux command line cheat sheet</h2>
 
         <section id="downloads">
           <a href="https://github.com/DavidCWebs/Linux/zipball/master" class="btn">Download as .zip</a>
