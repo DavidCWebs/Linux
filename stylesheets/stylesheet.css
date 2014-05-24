@@ -87,6 +87,7 @@ header {
   padding: 20px 0;
   margin: 0 0 40px 0;
     z-index: 2000;
+    text-align: center;
 }
 
 footer {
