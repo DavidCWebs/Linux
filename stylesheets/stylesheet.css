@@ -8,6 +8,11 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
 /* General & 'Reset' Stuff */
 
 .container {
@@ -29,9 +34,25 @@ section {
     z-index: 1030;
 }
 
-#main-content {
-    padding-top: 180px;
+.main {
     z-index: 1000;
+    padding: 180px 0 0 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#main-content {
+    width: 75%;
+    float: left;
+}
+
+#sidebar {
+    position: fixed;
+    right: 0;
+    width: 25%;
+    /*width: 25%;
+    float: left;*/
+    padding-left: 20px;
 }
 
 /* Position within page links when fixed header in place */
@@ -66,6 +87,10 @@ header {
   padding: 20px 0;
   margin: 0 0 40px 0;
     z-index: 2000;
+}
+
+footer {
+    clear: both;
 }
 
 header h1 {

@@ -25,104 +25,112 @@
       </div>
     </header>
 
-    <div class="container">
+    <div class="main">
       <section id="main-content">
         <!--<h1>
-<a name="linux-command-line-cheat-sheet" class="anchor" href="#linux-command-line-cheat-sheet"><span class="octicon octicon-link"></span></a>Linux command line cheat sheet</h1>-->
-<h2>Contents</h2>
-<ul>
-<li><a href="#general-commands">General Commands</a></li>
-<li><a href="#users--groups">Users &amp; Groups</a></li>
-<li><a href="#manage-directories">Manage Directories</a></li>
-<li><a href="#wordpress-set-directory--file-permissions">WordPress: Set Directory &amp; File Permissions</a></li>
-<li><a href="#sync-to-remote-server">Sync to Remote Server</a></li>
-</ul>
-<p>This cheatsheet contains commands for Ubuntu, but they should work for any debian based Linux flavour. Maintained by <a href="https://github.com/DavidCWebs">@DavidCWebs</a>
- - get in touch with me <a href="https://twitter.com/DavidRedBranch">via Twitter</a>.</p>
- <p>This should really be in wiki format, but I'm playing with GitHub pages!</p>
+            <a name="linux-command-line-cheat-sheet" class="anchor" href="#linux-command-line-cheat-sheet"><span class="octicon octicon-link"></span></a>Linux command line cheat sheet</h1>-->
+            <h2>
+            <a name="introduction" class="pad anchor" href="#introduction"><span class="octicon octicon-link"></span></a>
+            Introduction</h2>
+            <p>This cheatsheet contains commands for Ubuntu, but they should work for any debian based Linux flavour. Maintained by <a href="https://github.com/DavidCWebs">@DavidCWebs</a>
+             - get in touch with me <a href="https://twitter.com/DavidRedBranch">via Twitter</a>.</p>
+             <p>This should really be in wiki format, but I'm playing with GitHub pages!</p>
 
-<h3>
-<a name="general-commands" class="pad anchor" href="#general-commands"><span class="octicon octicon-link"></span></a>General Commands</h3>
+            <h3>
+            <a name="general-commands" class="pad anchor" href="#general-commands"><span class="octicon octicon-link"></span></a>General Commands</h3>
 
-<p>Change Directory:<pre><code>cd /path/to/dir</code></pre> Move up one Directory:<pre><code>cd..</code></pre> Move to Root:<pre><code>cd /</code></pre>  Move to Users Home:<pre><code>cd ~</code></pre></p>
+            <p>Change Directory:<pre><code>cd /path/to/dir</code></pre> Move up one Directory:<pre><code>cd..</code></pre> Move to Root:<pre><code>cd /</code></pre>  Move to Users Home:<pre><code>cd ~</code></pre></p>
 
-<p>Copy an entire directory and it's contents, including sub directories &amp; files:</p>
+            <p>Copy an entire directory and it's contents, including sub directories &amp; files:</p>
 
-<pre><code>sudo cp -r /path/to/source /path/to/destination
-</code></pre>
-<h3>
-<a name="users--groups" class="pad anchor" href="#users--groups"><span class="octicon octicon-link"></span></a>Users &amp; Groups</h3>
+            <pre><code>sudo cp -r /path/to/source /path/to/destination
+            </code></pre>
+            <h3>
+            <a name="users--groups" class="pad anchor" href="#users--groups"><span class="octicon octicon-link"></span></a>Users &amp; Groups</h3>
 
-<p>Add User to Sudoers:</p>
+            <p>Add User to Sudoers:</p>
 
-<pre><code>sudo adduser &lt;username&gt; sudo
-</code></pre>
+            <pre><code>sudo adduser &lt;username&gt; sudo
+            </code></pre>
 
-<p>Create user with password and home folder:</p>
+            <p>Create user with password and home folder:</p>
 
-<pre><code>sudo useradd -d /home/testuser -m testuser
-sudo passwd testuser
-</code></pre>
+            <pre><code>sudo useradd -d /home/testuser -m testuser
+            sudo passwd testuser
+            </code></pre>
 
-<p>Rename file extensions:</p>
+            <p>Rename file extensions:</p>
 
-<pre><code>rename 's/\.foo$/\.bar/' * SPECIFIC EXAMPLE: rename 's/\.gddoc$/\.txt/' *
-</code></pre>
-<h3>
-<a name="manage-directories" class="pad anchor" href="#manage-directories"><span class="octicon octicon-link"></span></a>Manage Directories</h3>
+            <pre><code>rename 's/\.foo$/\.bar/' * SPECIFIC EXAMPLE: rename 's/\.gddoc$/\.txt/' *
+            </code></pre>
+            <h3>
+            <a name="manage-directories" class="pad anchor" href="#manage-directories"><span class="octicon octicon-link"></span></a>Manage Directories</h3>
 
-<p>Delete the files and directories, but requires a prompt for each of the files</p>
+            <p>Delete the files and directories, but requires a prompt for each of the files</p>
 
-<pre><code>rm -r directory
-</code></pre>
+            <pre><code>rm -r directory
+            </code></pre>
 
-<p>Delete all with no prompt:</p>
+            <p>Delete all with no prompt:</p>
 
-<pre><code>rm -rf example
-</code></pre>
+            <pre><code>rm -rf example
+            </code></pre>
 
-<p>Print Directory Contents. Once in the directory you want to print the contents of:</p>
+            <p>Print Directory Contents. Once in the directory you want to print the contents of:</p>
 
-<pre><code>ls &gt; print.txt
-</code></pre>
-<h3>
-<a name="wordpress-set-directory--file-permissions" class="pad anchor" href="#wordpress-set-directory--file-permissions"><span class="octicon octicon-link"></span></a>WordPress: Set Directory &amp; File Permissions</h3>
+            <pre><code>ls &gt; print.txt
+            </code></pre>
+            <h3>
+            <a name="wordpress-set-directory--file-permissions" class="pad anchor" href="#wordpress-set-directory--file-permissions"><span class="octicon octicon-link"></span></a>WordPress: Set Directory &amp; File Permissions</h3>
 
-<p>Set Directory Permissions to 755:</p>
+            <p>Set Directory Permissions to 755:</p>
 
-<pre><code>find /var/www/domain.com/path-to-wp -type d -exec chmod 755 {} \;
-</code></pre>
+            <pre><code>find /var/www/domain.com/path-to-wp -type d -exec chmod 755 {} \;
+            </code></pre>
 
-<p>Set File Permissions to 644:</p>
+            <p>Set File Permissions to 644:</p>
 
-<pre><code>find /var/www/path-to-wp -type f -exec chmod 644 {} \;
-</code></pre>
-<h3>
-<a name="sync-to-remote-server" class="pad anchor" href="#sync-to-remote-server"><span class="octicon octicon-link"></span></a>Sync to Remote Server</h3>
+            <pre><code>find /var/www/path-to-wp -type f -exec chmod 644 {} \;
+            </code></pre>
+            <h3>
+            <a name="sync-to-remote-server" class="pad anchor" href="#sync-to-remote-server"><span class="octicon octicon-link"></span></a>Sync to Remote Server</h3>
 
-<p>This is probably better than scp - since it only transfers the differences between two sets of files. Assumes that SSH has been set up between local and remote.</p>
+            <p>This is probably better than scp - since it only transfers the differences between two sets of files. Assumes that SSH has been set up between local and remote.</p>
 
-<pre><code>rsync -az /path/to/source username@host:/path/to/destination
-</code></pre>
+            <pre><code>rsync -az /path/to/source username@host:/path/to/destination
+            </code></pre>
 
-<p>May need to specify SSH:</p>
+            <p>May need to specify SSH:</p>
 
-<pre><code>rsync -az -e ssh /path/to/source username@host:/path/to/destination
-</code></pre>
+            <pre><code>rsync -az -e ssh /path/to/source username@host:/path/to/destination
+            </code></pre>
 
-<p>HTML version of rsync man page: <a href="http://rsync.samba.org/ftp/rsync/rsync.html">http://rsync.samba.org/ftp/rsync/rsync.html</a></p>
+            <p>HTML version of rsync man page: <a href="http://rsync.samba.org/ftp/rsync/rsync.html">http://rsync.samba.org/ftp/rsync/rsync.html</a></p>
 
-<p>Common options used with rsync commands:</p>
+            <p>Common options used with rsync commands:</p>
 
-<ul>
-<li>-v : verbose</li>
-<li>-r : copies data recursively (but don’t preserve timestamps and permission while transferring data</li>
-<li>-a : archive mode - preserves almost everything - copies files recursively, preserves symbolic links, file permissions, user &amp; group ownerships and timestamps</li>
-<li>-z : compress file data</li>
-<li>-h : human-readable, output numbers in a human-readable format</li>
-</ul><p>Good description of rsync flags: <a href="http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/">http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/</a></p>
+            <ul>
+            <li>-v : verbose</li>
+            <li>-r : copies data recursively (but don’t preserve timestamps and permission while transferring data</li>
+            <li>-a : archive mode - preserves almost everything - copies files recursively, preserves symbolic links, file permissions, user &amp; group ownerships and timestamps</li>
+            <li>-z : compress file data</li>
+            <li>-h : human-readable, output numbers in a human-readable format</li>
+            </ul><p>Good description of rsync flags: <a href="http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/">http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/</a></p>
+    </section>
+    <section id="sidebar">
+          <h3>Contents</h3>
+          <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#general-commands">General Commands</a></li>
+                <li><a href="#users--groups">Users &amp; Groups</a></li>
+                <li><a href="#manage-directories">Manage Directories</a></li>
+                <li><a href="#wordpress-set-directory--file-permissions">WordPress: Set Directory &amp; File Permissions</a></li>
+                <li><a href="#sync-to-remote-server">Sync to Remote Server</a></li>
+          </ul>
       </section>
+    
     </div>
+    
 
 </body>
 <footer>
