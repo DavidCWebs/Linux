@@ -21,6 +21,21 @@ section {
   margin: 0 0 20px 0;
 }
 
+/* Fix header area and push content accordingly */
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+#main-content {
+    padding-top: 180px;
+    z-index: 1000;
+}
+
+/* End push */
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
   color: #fff;
@@ -37,11 +52,12 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
   border-bottom: 1px dashed #666;
   padding: 20px 0;
   margin: 0 0 40px 0;
+    z-index: 2000;
 }
 
 header h1 {
@@ -235,6 +251,11 @@ hr {
 .btn-github .icon {
   opacity: 0.6;
   background: url("../images/blacktocat.png") 0 0 no-repeat;
+}
+
+.btn-contents .icon {
+  opacity: 0.6;
+  background: url("../images/contents.png") 0 5px no-repeat;
 }
 
 /* Links
