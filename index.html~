@@ -42,8 +42,18 @@
 
             <p>Copy an entire directory and it's contents, including sub directories &amp; files:</p>
 
-            <pre><code>sudo cp -r /path/to/source /path/to/destination
-            </code></pre>
+            <pre><code>sudo cp -r /path/to/source /path/to/destination</code></pre>
+            
+				<p>Delete Dir:</p><pre><code>rm -r dirname</code></pre>
+				<p>With no warnings:</p><pre><code>rm -rf dirname</code></pre>
+				<p>Move file to destination directory:</p><pre><code>mv file.txt destination-dir</code></pre>
+
+				<h3>
+	         <a name="bash-scripts" class="pad anchor" href="#bash-scripts"><span class="octicon octicon-link"></span></a>BASH Scripts</h3>
+				<p>To make executable, move to /usr/local/bin, execute in terminal with file.sh</p>
+				<pre><code>sudo chmod +x /file.sh</code></pre>
+				<pre><code>sudo mv file.sh /usr/local/bin</code></pre>
+                        
             <h3>
             <a name="users--groups" class="pad anchor" href="#users--groups"><span class="octicon octicon-link"></span></a>Users &amp; Groups</h3>
 
@@ -127,6 +137,7 @@
           <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#general-commands">General Commands</a></li>
+                <li><a href="#bash-scripts">BASH Scripts</a></li>
                 <li><a href="#users--groups">Users &amp; Groups</a></li>
                 <li><a href="#manage-directories">Manage Directories</a></li>
                 <li><a href="#wordpress-set-directory--file-permissions">WordPress: Set Directory &amp; File Permissions</a></li>
