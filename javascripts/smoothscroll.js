@@ -1,6 +1,6 @@
 //smooth scrolling
-jQuery(document).ready(function(){
-    $('a[href*="#nav"]').on('click',function (e) {
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
         var target = this.hash,
             $target = $(target);
@@ -10,4 +10,4 @@ jQuery(document).ready(function(){
             window.location.hash = target;
         });
     });
- });
+});
