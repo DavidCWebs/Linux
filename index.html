@@ -43,15 +43,25 @@
                     <td>Change Directory</td>
                     <td>Move up one Directory</td>
                     <td>Move to Root</td>
-                    <td>Move to Users Home</td>
                 </tr>
                 <tr>
                     <td><pre><code>cd /path/to/dir</code></pre></td>
                     <td><pre><code>cd..</code></pre></td>
                     <td><pre><code>cd /</code></pre></td>
-                    <td><pre><code>cd ~</code></pre></td>
                 </tr>
-            </table>    
+            </table>
+            <table>
+                <tr>
+                    <td>Move to Users Home</td>
+                    <td>Show the directory you're in</td>
+                    <td>Find file whose name starts with "file", starting from root directory</td>
+                </tr>
+                <tr>
+                    <td><pre><code>cd ~</code></pre></td>
+                    <td><pre><code>pwd</code></pre></td>
+                    <td><pre><code>find / -name 'file*'</code></pre></td>
+                </tr>
+            </table>   
 </section>
 <section id="managing-files-directories">
     <h3><a name="managing-files-directories" class="pad anchor" href="#managing-files-directories"><span class="octicon octicon-link"></span></a>Managing Files & Directories</h3>
@@ -76,15 +86,23 @@
                     <td>List all files in a directory</td>
                     <td>Write files & directories list to a file</td>
                     <td>Include hidden files and directories, preceded with "."</td>
-                    <td>List contents of parent directory</td>
-                    <td>Print directory contents to print.txt</td>
                 </tr>
                 <tr>
                     <td><pre><code>ls -l</code></pre></td>
                     <td><pre><code>ls -LR >> list.txt</code></pre></td>
                     <td><pre><code>ls -a</code></pre></td></td>
-                    <td><pre><code>ls ../</code></pre></td></td>
-                    <td><pre><code>ls &gt; print.txt</code></pre></td></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>List contents of parent directory</td>
+                    <td>Print directory contents to print.txt</td>
+                    <td>Remove file1 in current directory</td>
+                </tr>
+                <tr>
+                    <td><pre><code>ls ../</code></pre></td>
+                    <td><pre><code>ls &gt; print.txt</code></pre></td>
+                    <td><pre><code>rm file1</code></pre></td>
                 </tr>
             </table>
             <p>Tree is a directory listing programme that displays files and folders recursively in a tree structure.
@@ -100,6 +118,9 @@
                     <td><pre>tree -p >> inventory.txt<code></code></pre></td>
                 </tr>
             </table>
+            <p>Rename file extensions:</p>
+            <pre><code>rename 's/\.foo$/\.bar/' * SPECIFIC EXAMPLE: rename 's/\.gddoc$/\.txt/' *
+            </code></pre>  
 </section>
 <section id="managing-groups">
     <h3><a name="managing-groups" class="pad anchor" href="#managing-groups"><span class="octicon octicon-link"></span></a>Managing Groups</h3>
@@ -124,9 +145,9 @@
 				<p>Move to /usr/local/bin, execute in terminal with file.sh</p>
 				<pre><code>sudo mv file.sh /usr/local/bin</code></pre>    
 </section>    
-<section id="users-groups">
+<section id="users">
     <h3>
-            <a name="users-groups" class="pad anchor" href="#users-groups"><span class="octicon octicon-link"></span></a>Users &amp; Groups</h3>
+            <a name="users" class="pad anchor" href="#users"><span class="octicon octicon-link"></span></a>Managing Users</h3>
 
             <p>Add User to Sudoers:</p>
 
@@ -136,12 +157,7 @@
             <p>Create user with password and home folder:</p>
 
             <pre><code>sudo useradd -d /home/testuser -m testuser<br>sudo passwd testuser
-            </code></pre>
-
-            <p>Rename file extensions:</p>
-
-            <pre><code>rename 's/\.foo$/\.bar/' * SPECIFIC EXAMPLE: rename 's/\.gddoc$/\.txt/' *
-            </code></pre>    
+            </code></pre>  
 </section>      
 <section id="wordpress">
     <h3><a name="wordpress" class="pad anchor" href="#wordpress"><span class="octicon octicon-link"></span></a>Set Directory &amp; File Permissions</h3>
@@ -197,7 +213,7 @@
                 <li><a href="#managing-files-directories">Managing Files & Directories</a></li>
                 <li><a href="#managing-groups">Managing Groups</a></li>
                 <li><a href="#bash-scripts">BASH Scripts</a></li>
-                <li><a href="#users-groups">Users &amp; Groups</a></li>
+                <li><a href="#users">Managing Users</a></li>
                 <li><a href="#wordpress">WordPress: Set Directory &amp; File Permissions</a></li>
                 <li><a href="#sync-to-remote-server">Rsync to Remote Server</a></li>
                 <li><a href="#scp-to-remote-server">SCP to Remote Server</a></li>
