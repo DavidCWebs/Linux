@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
+  /*background: #151515 url("../images/bkg.png") 0 0;*/
+  /*color: #eaeaea;*/
+  color: #666;
   font: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -67,7 +68,8 @@ a.pad.anchor {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
-  color: #fff;
+  /*color: #fff;*/
+    color: #000;
 }
 
 li {
@@ -81,7 +83,7 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   width: 100%;
   border-bottom: 1px dashed #666;
   padding: 20px 0;
@@ -116,7 +118,7 @@ header h1:before {
 header h2 {
   font-size: 24px;
   font-weight: 300;
-  color: #fff;
+  color: #000;
 }
 
 #downloads .btn {
@@ -139,7 +141,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #fff;/*#b5e853;*/
+  color: #000;/*#b5e853;*/
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -189,10 +191,11 @@ ul li {
 }
 
 ul li:before {
-  content: "--";
+  content: ">>";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
-  color: #b5e853;
+  /*color: #b5e853;*/
+    color: #000;
   margin-left: -37px;
   margin-right: 21px;
   line-height: 16px;
@@ -247,7 +250,7 @@ th {
 }
 
 td {
-  padding: 5px 10px 0 0;
+  padding: 5px 20px 0 0;
 }
 
 hr {
@@ -306,8 +309,12 @@ hr {
 */
 
 a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  color: /*#63c0f5;*/#2297d9;
+  text-shadow: 0 0 1px rgba(104, 182, 255, 0.5);
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* Clearfix */

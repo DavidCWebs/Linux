@@ -29,15 +29,14 @@
     </header>
 <div class="main">
 <div id="main-content">
-        <!--<h1>
-            <a name="linux-command-line-cheat-sheet" class="anchor" href="#linux-command-line-cheat-sheet"><span class="octicon octicon-link"></span></a>Linux command line cheat sheet</h1>-->
-            <h2><a name="introduction" class="pad anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+<section id="introduction">
+    <h2><a name="introduction" class="pad anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
             <p>This cheatsheet contains commands for Ubuntu, but they should work for any debian based Linux flavour. Maintained by <a href="https://github.com/DavidCWebs">@DavidCWebs</a>
              - get in touch with me <a href="https://twitter.com/DavidRedBranch">via Twitter</a>.</p>
              <p>This should really be in wiki format, but I'm playing with GitHub pages!</p>
+</section>
 <section id="general-commands">
-    <h3><a name="general-commands" class="pad anchor" href="#general-commands"><span class="octicon octicon-link"></span></a>
-            General Commands</h3>
+    <h3><a name="general-commands" class="pad anchor" href="#general-commands"><span class="octicon octicon-link"></span></a>General Commands</h3>
             
             <table>
                 <tr>
@@ -55,8 +54,7 @@
             </table>    
 </section>
 <section id="managing-files-directories">
-    <h3><a name="managing-files-directories" class="pad anchor" href="#managing-files-directories"><span class="octicon octicon-link"></span></a>
-            Managing Files & Directories</h3>
+    <h3><a name="managing-files-directories" class="pad anchor" href="#managing-files-directories"><span class="octicon octicon-link"></span></a>Managing Files & Directories</h3>
             <p>Copy an entire directory and it's contents, including sub directories &amp; files:</p>
 
             <pre><code>sudo cp -r /path/to/source /path/to/destination</code></pre>
@@ -64,7 +62,7 @@
             <table>
                 <tr>
                     <td>Delete Directory</td>
-                    <td>With no warnings</td>
+                    <td>Delete directory and contents with no warnings</td>
                     <td>Move file to destination directory</td>
                 </tr>
                 <tr>
@@ -79,12 +77,14 @@
                     <td>Write files & dirs to file</td>
                     <td>Include "."</td>
                     <td>List contents of parent directory</td>
+                    <td>Print directory contents to print.txt</td>
                 </tr>
                 <tr>
                     <td><pre><code>ls -l</code></pre></td>
                     <td><pre><code>ls -LR >> list.txt</code></pre></td>
                     <td><pre><code>ls -a</code></pre></td></td>
                     <td><pre><code>ls ../</code></pre></td></td>
+                    <td><pre><code>ls &gt; print.txt</code></pre></td></td>
                 </tr>
             </table>
             <p>Tree is a directory listing programme that displays files and folders recursively in a tree structure.
@@ -99,11 +99,10 @@
                     <td><pre><code>tree >> inventory.txt</code></pre></td>
                     <td><pre>tree -p >> inventory.txt<code></code></pre></td>
                 </tr>
-            </table>   
+            </table>
 </section>
 <section id="managing-groups">
-    <h3><a name="managing-groups" class="pad anchor" href="#managing-groups"><span class="octicon octicon-link"></span></a>
-            Managing Groups</h3>
+    <h3><a name="managing-groups" class="pad anchor" href="#managing-groups"><span class="octicon octicon-link"></span></a>Managing Groups</h3>
             <table>
                 <tr>
                     <td>List all groups on system</td>
@@ -145,8 +144,7 @@
             </code></pre>    
 </section>           
 <section id="manage-directories">
-    <h3><a name="manage-directories" class="pad anchor" href="#manage-directories"><span class="octicon octicon-link"></span></a>
-    Manage Directories</h3>
+    <h3><a name="manage-directories" class="pad anchor" href="#manage-directories"><span class="octicon octicon-link"></span></a>Manage Directories</h3>
 
             <p>Delete the files and directories, but requires a prompt for each of the files</p>
 
