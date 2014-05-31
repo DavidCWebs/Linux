@@ -241,6 +241,7 @@ code.inline {
 table {
   width: 100%;
   margin: 0 0 20px 0;
+    table-layout: fixed;
 }
 
 th {
@@ -251,6 +252,7 @@ th {
 
 td {
   padding: 5px 20px 0 0;
+    width: 33%;
 }
 
 hr {
